@@ -1,0 +1,288 @@
+.section-title {
+  font-weight: 700;
+  color: #7a1f3d;
+}
+
+/* FEATURES */
+.swastika-features .feature-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.4s;
+}
+
+.feature-box i {
+  font-size: 40px;
+  color: #b76e79;
+  margin-bottom: 15px;
+}
+
+.feature-box:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* TESTIMONIALS */
+.swastika-testimonials {
+  background: #fdf5f7;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+/* NEWSLETTER */
+.swastika-newsletter {
+  background: linear-gradient(135deg, #7a1f3d, #b76e79);
+  padding: 60px 0;
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 12px;
+  width: 280px;
+  border-radius: 30px;
+  border: none;
+}
+
+.newsletter-form button {
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background: gold;
+  font-weight: bold;
+}
+
+/* ===== SERVICES PAGE ===== */
+
+.services-hero {
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url("../images/embroidery-bg.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  color: #fff;
+}
+
+.services-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.services-hero p {
+  font-size: 1.2rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  transition: 0.4s;
+  height: 100%;
+}
+
+.service-card i {
+  font-size: 45px;
+  color: #b76e79;
+  margin-bottom: 15px;
+}
+
+.service-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+.services-cta {
+  background: linear-gradient(135deg, #7a1f3d, #b76e79);
+  padding: 80px 20px;
+  color: #fff;
+}
+
+
+/* ===== EMBROIDERY GALLERY ===== */
+
+.embroidery-gallery {
+  background: #fff5f8;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.15);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.7)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: 0;
+  transition: 0.4s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay h5 {
+  margin-bottom: 12px;
+}
+
+.gallery-overlay .btn {
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* ===== servces .php ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf4;
+    color: #3b2f2f;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #7b1e3a;
+    font-weight: 700;
+}
+
+.section-title p {
+    color: #6b4e4e;
+}
+
+/* Service Cards */
+.service-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.service-content h4 {
+    color: #7b1e3a;
+    font-weight: 600;
+}
+
+.service-content p {
+    font-size: 14px;
+    color: #5f4b4b;
+}
+
+.order-btn {
+    margin-top: 15px;
+    background: linear-gradient(45deg, #7b1e3a, #cfa44a);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+    background: linear-gradient(45deg, #cfa44a, #7b1e3a);
+    color: #fff;
+}
+
+
+
+/* contact page start */
+.section-title h2{
+  color:#7b1e3a;
+  font-weight:700;
+}
+
+.section-title p{
+  color:#555;
+}
+
+.contact-box p i{
+  color:#7b1e3a;
+}
+
+.contact-form .form-control{
+  border-radius:10px;
+  border:1px solid #ddd;
+}
+
+.contact-form .form-control:focus{
+  border-color:#7b1e3a;
+  box-shadow:none;
+}
+
+.swastika-btn{
+  background:#7b1e3a;
+  color:#fff;
+  padding:12px;
+  border-radius:25px;
+  border:none;
+  font-weight:600;
+}
+
+.swastika-btn:hover{
+  background:#5e162d;
+}
+
+.contact-box, .contact-form{
+  background:#fff;
+}
+ /*contact page end*/
